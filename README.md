@@ -1,11 +1,11 @@
-# Sistema de Gestion Cinemar 
+# Sistema de Gestión de boletería Cinemar 
 ## Contexto
 
-***Cinemar*** es una empresa que se dedica a proyectar peliculas esenciales dedicadas al público adolecente.
+***Cinemar*** es una empresa que se dedica a proyectar películas esenciales dedicadas al público adolecente.
 
 El cine cuenta con una cantidad de salas con diferentes capacidades (siendo esta capacidad de butacas), tambien dispone de salas 2D como 3D variando el precio de las entradas. 
 
-Cuando un cliente se presenta en ventanilla muestra su tarjeta de descuento, si la tiene, se le efectua un descuento en el valor de la entrada, sino pueden solicitar una si acudieron al menos 6 veces en 3 meses, en caso contrario el precio de la entrada no tendra descuento alguno.
+Cuando un cliente se presenta en ventanilla muestra su tarjeta de descuento, si la tiene, se le efectúa un descuento en el valor de la entrada, sino pueden solicitar una si acudieron al menos 6 veces en 3 meses, en caso contrario el precio de la entrada no tendrá descuento alguno.
 
 Actualmente la table de descuento para los que tienen la tarjeta de descuento es la siguiente:
 
@@ -13,31 +13,31 @@ Actualmente la table de descuento para los que tienen la tarjeta de descuento es
 * Martes y Jueves: 15%
 * Viernes, Sabado y Domingo: 10%
 
-siendo modificable segun los directivos.
+siendo modificable según los directivos.
 
-## Problematica
+## Problemática 
 
-Los directivos de ***Cinemar*** comentaron a nuestro equipo que no cuentan con un control de los clientes, para realizar reservas de butacas y otorgales descuentos para aquellos que son mas recurrentes de forma automatica.
+Los directivos de ***Cinemar*** comentaron a nuestro equipo que no cuentan con un control de los clientes, para realizar reservas de butacas y otorgales descuentos para aquellos que son mas recurrentes de forma automática.
 
-Todo se efectua mediante ventanilla y a mano, lo que provoca que en algunas salas a veces se terminan vendiendo mas entradas que la capacidad de la sala, y perdiendo ventas en funciones por no contar con reservas por paginas web en horarios especificos.
+Todo se efectua mediante ventanilla y a mano, lo que provoca que en algunas salas a veces se terminan vendiendo mas entradas que la capacidad de la sala, y perdiendo ventas en funciones por no contar con reservas por páginas web en horarios específicos.
 
 
-## Solucion
+## Solución 
 
-Nos llega desde administracion del cine a nuestro equipo de desarrolladores que tenemos que implementar una solucion que nos permita lo siguiente.
+Nos llega desde administración del cine a nuestro equipo de desarrolladores que tenemos que implementar una solución que nos permita lo siguiente.
 
 > **Para el cliente:**
 * Registrarse.
-* Iniciar Sesion.
+* Iniciar Sesión.
 * Crear una reserva.
 * Modificar una reserva.
 * Observar mis reservas.
 * Ver el historico de mis entradas.
 
-> **Para la Administracion:**
+> **Para la Administración:**
 * Ver reservas de todos los clientes.
 * Ver reservas de un cliente en Particular
-* Crear una sala con la pelicula.
+* Crear una sala con la película.
 * Modificar una sala.
 * Eliminar una sala.
 * Modificar descuentos.
@@ -47,9 +47,9 @@ Nos llega desde administracion del cine a nuestro equipo de desarrolladores que 
 
 ## Consideraciones
 
-* No se venceran las peliculas, sino que sera por la creacion de una sala.
+* No se venceran las películas, sino que sera por la creación de una sala.
 * La reserva implica el pago de la entrada.
-* Las reservas solo se pueden modificar simpre y cuando se hagan antes de la funcion.
+* Las reservas solo se pueden modificar simpre y cuando se hagan antes de la función.
 
 
 # Entregables
@@ -57,18 +57,18 @@ Nos llega desde administracion del cine a nuestro equipo de desarrolladores que 
 ## Checkpoint 1 (Fecha: 13/06 al 16/03)
 
 1) Elaborar un diagrama de clases proponiendo la solucion.
-2) Elaborar otro diagrama de clases mostrando el metodo de registro de clientes e inicio de sesion.
+2) Elaborar otro diagrama de clases mostrando el método de registro de clientes e inicio de sesión.
 
 ## Checkpoint 2 (Fecha: 20/06 al 24/06)
 
-1) Elaborar el DER (diagrama de entidad relacion) de la solucion.
+1) Elaborar el DER (diagrama de entidad relación) de la solución.
 
 2) Presentar los Script de generacion de esquemas de la base de datos.
 
 ## Checkpoint 3 (Fecha:04/7 - 08/07)
-1) Presentacion grupal del proyecto.
-2) Explicacion del codigo.
-3) Decision de diseño.
+1) Presentación grupal del proyecto.
+2) Explicación del código.
+3) Decisión de diseño.
 
 
 
@@ -155,7 +155,7 @@ POST / register
 }
 ```
 
-PathParam (nro): Se enviara el numero de reserva a modificar.
+PathParam (nro): Se enviara el número de reserva a modificar.
 
 > Request
 ```java
@@ -193,7 +193,7 @@ PathParam (nro): Se enviara el numero de reserva a modificar.
 }]
 ```
 
-## Creacion Sala
+## Creación Sala
 
 ```java
 {
@@ -215,7 +215,7 @@ PathParam (nro): Se enviara el numero de reserva a modificar.
 { }
 ```
 
-## Modificacion Sala
+## Modificación de Sala
 
 ```java
 {
@@ -243,7 +243,7 @@ PathParam (nro): Se enviara el numero de reserva a modificar.
     DELETE /room/delete/{nro}
 }
 ```
-PathParam(nro): Se enviara el numero de sala que se eleminara.
+PathParam(nro): Se enviará el número de sala que se eliminará.
 
 > Request
 ```java
@@ -255,7 +255,7 @@ PathParam(nro): Se enviara el numero de sala que se eleminara.
 {]
 ```
 
-## Moficar descuentos
+## Modificar descuentos
 
 > Request
 
