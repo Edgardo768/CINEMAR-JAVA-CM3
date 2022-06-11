@@ -1,7 +1,7 @@
 # Sistema de Gestion Cinemar 
 ## Contexto
 
-***Cinemar*** es una t que se dedica a proyectar peliculas esenciales dedicadas al publico adolecente.
+***Cinemar*** es una empresa que se dedica a proyectar peliculas esenciales dedicadas al público adolecente.
 
 El cine cuenta con una cantidad de salas con diferentes capacidades (siendo esta capacidad de butacas), tambien dispone de salas 2D como 3D variando el precio de las entradas. 
 
