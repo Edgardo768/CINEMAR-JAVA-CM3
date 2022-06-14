@@ -7,7 +7,7 @@ El cine cuenta con una cantidad de salas con diferentes capacidades (siendo esta
 
 Cuando un cliente se presenta en ventanilla muestra su tarjeta de descuento, si la tiene, se le efectúa un descuento en el valor de la entrada, sino pueden solicitar una si acudieron al menos 6 veces en 3 meses, en caso contrario el precio de la entrada no tendrá descuento alguno.
 
-Actualmente la table de descuento para los que tienen la tarjeta de descuento es la siguiente:
+Actualmente la tabla de descuento para los que tienen la tarjeta de descuento es la siguiente:
 
 * Lunes y Miercoles: 20%
 * Martes y Jueves: 15%
@@ -252,7 +252,7 @@ PathParam(nro): Se enviará el número de sala que se eliminará.
 
 > Response (HTTPSTATUS **204**)
 ```java
-{]
+{}
 ```
 
 ## Modificar descuentos
@@ -273,3 +273,38 @@ PathParam(nro): Se enviará el número de sala que se eliminará.
 ```
  
 ## Ver salas
+
+```java
+{
+    GET/ rooms/get
+}
+
+```
+
+**QueryParams**: Se podra agregar como filtro pelicula, dia y hora.
+
+> Request
+
+```java
+{ }
+```
+
+> Response(HTTPSTATUS **200**)
+
+```java
+[{
+    nro: 52,
+    date: "2022-06-18",
+    movie: "dragon ball, Broly",
+    time: "22:30"
+},{
+    nro: 25,
+    date: "2022-06-21",
+    movie: "101 dalmatas",
+    time: "17:00"
+}]
+```
+
+## Manejo de Errores
+
+Todos los resultados de las llamadas se recibiran por codigos HTTP mayores al 400, con su respectivo manejo de error. 
